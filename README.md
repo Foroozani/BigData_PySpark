@@ -19,6 +19,8 @@ Often data sources are incomplete, which means you will have missing data, you h
 
 # Spark for Machine Learning 
 
+- Linear regression
+
 
 ## Data Transformations
 
