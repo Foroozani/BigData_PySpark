@@ -51,4 +51,3 @@ userFeatures is a vector column that contains three user features. We want to co
 
 
 
-## Logistic Regression Consulting
