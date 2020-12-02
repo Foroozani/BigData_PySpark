@@ -15,3 +15,14 @@ Often data sources are incomplete, which means you will have missing data, you h
 * Just keep the missing data points.
 * Drop them missing data points (including the entire row)
 * Fill them in with some other value.
+
+---
+# Spark for Machine Learning 
+---
+## Data Transformations
+
+You won't always get data in a convienent format, often you will have to deal with data that is non-numerical, such as customer names, or zipcodes, country names, etc...
+
+A big part of working with data is using your own domain knowledge to build an intuition of how to deal with the data, sometimes the best course of action is to drop the data, other times feature-engineering is a good way to go, or you could try to transform the data into something the Machine Learning Algorithms will understand.
+
+Spark has several built in methods of dealing with thse transformations, check them all out here: http://spark.apache.org/docs/latest/ml-features.html
