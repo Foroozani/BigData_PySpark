@@ -7,3 +7,11 @@
 [![](https://img.shields.io/badge/Spark-v2.4.0-brigh)](https://spark.apache.org/)
 
 Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Scala, Java, Python, and R, and an optimized engine that supports general computation graphs for data analysis. It also supports a rich set of higher-level tools including Spark SQL for SQL and DataFrames, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for stream processing.
+
+## Data preprocessoing 
+### 1. Missing data
+Often data sources are incomplete, which means you will have missing data, you have 3 basic options for filling in missing data (you will personally have to make the decision for what is the right approach:
+
+* Just keep the missing data points.
+* Drop them missing data points (including the entire row)
+* Fill them in with some other value.
