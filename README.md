@@ -19,6 +19,7 @@ Often data sources are incomplete, which means you will have missing data, you h
 ---
 # Spark for Machine Learning 
 ---
+
 ## Data Transformations
 
 You won't always get data in a convienent format, often you will have to deal with data that is non-numerical, such as customer names, or zipcodes, country names, etc...
