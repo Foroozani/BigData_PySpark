@@ -16,9 +16,9 @@ Often data sources are incomplete, which means you will have missing data, you h
 * Drop them missing data points (including the entire row)
 * Fill them in with some other value.
 
----
+
 # Spark for Machine Learning 
----
+
 
 ## Data Transformations
 
