@@ -7,6 +7,15 @@
 
 Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Scala, Java, Python, and R, and an optimized engine that supports general computation graphs for data analysis. It also supports a rich set of higher-level tools including Spark SQL for SQL and DataFrames, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for stream processing.
 
+**Spark MLlib** library for Machine Learning provides a Collaborative Filtering implementation by using Alternating Least Squares. The implementation in MLlib has these parameters:
+
+* numBlocks is the number of blocks used to parallelize computation (set to -1 to auto-configure).
+* rank is the number of latent factors in the model.
+* iterations is the number of iterations to run.
+* lambda specifies the regularization parameter in ALS.
+* implicitPrefs specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data.
+* alpha is a parameter applicable to the implicit feedback variant of ALS that governs the baseline confidence in preference observations.
+
 ## Data preprocessoing 
 ### 1. Missing data
 Often data sources are incomplete, which means you will have missing data, you have 3 basic options for filling in missing data (you will personally have to make the decision for what is the right approach:
