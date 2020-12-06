@@ -1,3 +1,4 @@
+# import libraries
 import tweepy
 from tweepy import OAuthHandler
 from tweepy import Stream
@@ -5,8 +6,9 @@ from tweepy.streaming import StreamListener
 import socket
 import json
 
-
+#%%
 # Set up your credentials
+
 consumer_key=''
 consumer_secret=''
 access_token =''
