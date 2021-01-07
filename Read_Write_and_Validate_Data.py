@@ -91,7 +91,7 @@ test_df.show(1)
 
 # ## Validating Data
 # 
-# Next you will want to validate that you dataframe was read in correct. We will get
+# If you want to validate that you dataframe was read in correct. We will get
 # into more detailed data evaluation later on but first we need to ensure that all the
 # variable types were infered correctly and that the values actually made it in... sometimes
 # they don't :)
@@ -187,7 +187,6 @@ fs.delete(spark._jvm.Path('write_test.csv'), True)
 
 users1_2.write.mode("overwrite").parquet('parquet/')
 
-# For those who got an error attempting to run the above code.
 # Try this solution: https://stackoverflow.com/questions/59220832/unable-to-write-spark-dataframe-to-a-parquet-file-format-to-c-drive-in-pyspark
 # 
 #  Writting Partitioned Parquet Files
@@ -197,8 +196,7 @@ users1_2.write.mode("overwrite").parquet('parquet/')
 users1_2.write.mode("overwrite").partitionBy("gender").parquet('part_parquet/')
 
 
-# #### Writting your own dataframes here!
-# 
+# #### Writting your own dataframes here! 
 # You can also create your own dataframes directly here in your Juypter Notebook too if you want. 
 
 
