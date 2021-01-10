@@ -98,4 +98,5 @@ dependencies:
     - pyspark==3.0.1
     - pytz==2020.5
     - pyyaml==5.3.1
+    - pymongo==3.11.2
 prefix: /home/najmeh/anaconda3/envs/spark
