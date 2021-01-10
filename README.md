@@ -103,3 +103,5 @@ Internally, it works as follows. Spark Streaming receives live input data stream
 
 https://github.com/EBISYS/WaterWatch
 
+https://github.com/EBISYS/WaterWatch/blob/master/query.csv
+
