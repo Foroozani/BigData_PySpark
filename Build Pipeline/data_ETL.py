@@ -12,7 +12,7 @@ spark = SparkSession\
     .getOrCreate()
 
 # Load the dataset
-df_load = spark.read.csv(r"C:\Users\Edwin\Downloads\database.csv", header=True)
+df_load = spark.read.csv(r"database.csv", header=True)
 
 # Remove all fields we don't need
 lst_dropped_columns = ['Depth Error', 'Time', 'Depth Seismic Stations','Magnitude Error','Magnitude Seismic Stations','Azimuthal Gap', 'Horizontal Distance','Horizontal Error',
@@ -62,20 +62,5 @@ print('')
 
 
 # submit job: spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:2.4.1 data_ETL.py
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
