@@ -8,12 +8,10 @@ import json
 
 #%%
 # Set up your credentials
-
 consumer_key=''
 consumer_secret=''
 access_token =''
 access_secret=''
-
 
 class TweetsListener(StreamListener):
 
