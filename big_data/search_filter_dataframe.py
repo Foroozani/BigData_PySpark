@@ -36,8 +36,8 @@ df2.count()
 df2.show(5,False)
 # count the colomn 
 len(df2.columns)
-# =[=======================================================
-# Filtering data
+# ========================================================
+# Filtering data with condition
 # ========================================================
 
 fifa.filter("Age>40").select(['Name','Age']).limit(4).toPandas()
