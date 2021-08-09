@@ -106,6 +106,5 @@ https://github.com/EBISYS/WaterWatch
 https://github.com/EBISYS/WaterWatch/blob/master/query.csv
 
 
--- 
 [Configure Pycharm](https://www.youtube.com/watch?v=RsALKtZvqFo)
 
