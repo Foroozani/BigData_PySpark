@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-author SparkByExamples.com
-"""
-
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
@@ -18,12 +13,13 @@ df.show()
 
 df2=df.withColumn("salary", df.salary*3)
 df2.show()
-
+#-----------------------------------------------------------
 from pyspark.sql.functions import when
 df3 = df.withColumn("gender", when(df.gender == "M","Male") \
       .when(df.gender == "F","Female") \
       .otherwise(df.gender))
 df3.show()
+#------------------------------------------------------------
 
 df4=df.withColumn("salary",df.salary.cast("String"))
 df4.printSchema()
