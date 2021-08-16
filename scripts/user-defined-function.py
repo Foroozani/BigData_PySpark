@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-author SparkByExamples.com
-"""
-
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf
