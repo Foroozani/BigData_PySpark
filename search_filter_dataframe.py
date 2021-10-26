@@ -1,5 +1,6 @@
 import pyspark
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
 # May take awhile locally
 spark = SparkSession.builder.appName("FunctionsHW").getOrCreate()
 
@@ -8,10 +9,9 @@ print("You are working with", cores, "core(s)")
 spark
 
 fifa = spark.read.csv('Datasets/fifa19.csv',inferSchema=True,header=True)
-
 print(fifa.printSchema())
 
-from pyspark.sql.functions import *
+
 fifa.select(['Name','Position','Release Clause']).show(5,False)
 # Display the same results from above sorted by the players names
 fifa.select(['Name','Position']).orderBy('Name').show(5)
